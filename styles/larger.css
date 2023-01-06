@@ -1,0 +1,25 @@
+@media only screen and (min-width: 600px){
+  
+  
+    nav{
+       flex-direction: row-reverse;
+       justify-content: end;
+       gap : 10px;
+    }
+
+.activities{
+    
+    grid-column: 1 / 2;
+    grid-row: 2/4;
+}
+
+.project{
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+
+.info{
+    grid-column: 2 / 3;
+    grid-row: 3/4;
+}
+}
