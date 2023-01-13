@@ -2,7 +2,14 @@
 body{
     padding: 0px;
     margin: 0px;
+    color:black;
 }
+
+body.dark-mode{
+    background-color: #1E1E1E;
+    color: white;
+}
+
 nav{
    display: flex;
    flex-direction: column;
@@ -25,6 +32,29 @@ nav{
 
 }
 
+.menu-item{
+    display:none;
+}
+
+.open{
+    display: block;
+}
+.menu-button::before {
+    content:"≡";
+    font-size: 2rem;
+}
+.close::before {
+	content: "↩";
+}
+
+#mode::before{
+    content: "☀";
+}
+#mode.dark-mode::before{
+    content: "☾";
+}
+
+
 header{
     display: flex;
     background-color: #B9EFDE;
@@ -45,8 +75,8 @@ main{
     padding: 20px;
     margin: auto;
 
-}
 
+}
 
 section{
     box-shadow: cadetblue 0px 0px 10px 0px;

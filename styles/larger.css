@@ -22,4 +22,12 @@
     grid-column: 2 / 3;
     grid-row: 3/4;
 }
+
+.menu-item{
+    display: flex;
+    
+}
+.menu-button{
+    display: none;
+}
 }
