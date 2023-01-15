@@ -48,5 +48,9 @@
         color: var(--primary-color);
     }
 
+    .sponsor {
+        overflow-x: hidden;
+    }
+
 
 }
