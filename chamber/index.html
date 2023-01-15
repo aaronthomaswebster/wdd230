@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orem Utah Chamber of Commerce</title>
+        <meta name="description" content="Chamber of Commerce website for the city of Orem in Utah.">
+        <meta name="author" content="Aaron Webster">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="Aaron Webster's WDD230 Home Page">
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.orem.us/uploads/7/8/6/6/7866822/110411-1007_orig.jpg">
+        <meta property="og:url" content="https://aaronthomaswebster.github.io/wdd230/index.html">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img src="images/orem-2.png">
+                <button id="menu-button" aria-expanded="false" aria-controls="menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="menu">
+                    <a href="#" class="menu-item">Home</a>
+                    <a href="#" class="menu-item">Discover</a>
+                    <a href="#" class="menu-item">Directory</a>
+                    <a href="#" class="menu-item">Join</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="hero-image">
+                <img class="img-fluid" src="images/ocean.jpg">
+                <button id="button-1">Become a Member</button>
+                <button id="button-2">Event Registration</button>
+                <button id="button-3">Member Login</button>
+            </section>
+            <section id="welcome">
+                <div class="text">
+                    <h2>Welcome</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus unde temporibus aperiam
+                        nostrum labore consequuntur consectetur, eveniet sint asperiores veritatis hic nobis. Et
+                        voluptas vitae corporis illum quos cum laboriosam.</p>
+                </div>
+                <div class="image">
+                    <img src="images/orem-1.gif" alt="orem logo">
+                </div>
+            </section>
+            <section id="events">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li><a href="">Event 1</a></li>
+                    <li><a href="">Event 2</a></li>
+                    <li><a href="">Event 3</a></li>
+                </ul>
+            </section>
+            <section id="testimonial">
+                <div class="text"></div>
+                <div class="image"></div>
+            </section>
+            <section id="weather">
+                <div id="today"></div>
+                <div id="forecast">
+                    <div id="day1"></div>
+                    <div id="day2"></div>
+                    <div id="day3"></div>
+                    <div id="day4"></div>
+                    <div id="day5"></div>
+                </div>
+            </section>
+            <section id="news">
+
+            </section>
+            <section id="sponsors">
+                <h3>Our Sponsors</h3>
+                <div class="sponsor">
+                    <img src="images/Smiths.webp" alt="orem logo" width="200px">
+                    <img src="images/orem-1.gif" alt="orem logo" width="200px">
+                    <img src="images/orem-2.png" alt="orem logo" width="200px">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="current-year"></span> Aaron Webster - United States</p>
+            <p class="highlight" id="lastModified"></p>
+        </footer>
+        <script src="scripts/index.js"></script>
+    </body>
+
+</html>

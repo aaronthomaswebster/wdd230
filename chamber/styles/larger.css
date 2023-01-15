@@ -1,0 +1,52 @@
+@media only screen and (min-width: 600px) {
+    img-fluid {
+        width: 100%;
+        max-height: 400px;
+    }
+
+    #button-1 {
+        grid-column: 2/3;
+        margin-left: 0px;
+    }
+
+    #button-2 {
+        grid-column: 2/3;
+        margin-left: 0px;
+    }
+
+    #button-3 {
+        grid-column: 2/3;
+        margin-left: 0px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        gap: 10px;
+    }
+
+    #welcome>div:nth-child(1) {
+        grid-column: 1/2;
+        text-align: center;
+        font-family: var(--heading-font);
+        font-size: 2em;
+        color: var(--primary-color);
+    }
+
+    #welcome>div:nth-child(2) {
+        grid-column: 2/3;
+        text-align: center;
+        font-family: var(--heading-font);
+        font-size: 2em;
+        color: var(--primary-color);
+    }
+
+
+}
