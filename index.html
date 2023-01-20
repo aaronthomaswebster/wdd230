@@ -32,10 +32,20 @@
       <a class="link menu-item" href="https://www.byui.edu/">BYU-Idaho</a>
     </nav>
     <header>
-      <img src="images/aaron.png" alt="profile image">
+      <img src="images/aaron.webp" alt="profile image" loading="lazy">
       <h1>Aaron Webster</h1>
     </header>
     <main>
+      <div class="hero">
+        <picture>
+          <source srcset="images/temple-small.webp" alt="Temple" media="(min-width: 400)">
+          <img src="images/temple-large.webp" alt="Temple" loading="lazy">
+        </picture>
+
+        <div class="herolabel">
+          <p>Louisville Kentucky Templee</p>
+        </div>
+      </div>
       <h2 class="title">WDD 230: Course Activity Portal</h2>
       <section class="activities">
         <h3>Learning Activities</h3>
@@ -68,11 +78,15 @@
         <h3>Infomration</h3>
         <ul>
           <li><a href="">Weather</a></li>
-          <li><a href="">Number of visitors</a></li>
+          <li>Visit Count: <span id="visits" /> </li>
           <li><a href="">etc</a></li>
         </ul>
       </section>
     </main>
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98752.0466943093!2d-84.48480846894198!3d39.333552462636256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884051334b4a1cf7%3A0x7725672ecf5980d9!2sWest%20Chester%20Township%2C%20OH!5e0!3m2!1sen!2sus!4v1674196972116!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
       <p>© <span id="current-year"></span> Aaron Webster - United States</p>
       <p class="highlight" id="lastModified"></p>

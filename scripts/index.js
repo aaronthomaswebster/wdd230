@@ -1,5 +1,6 @@
 //setup haberger menu
 let darkMode = localStorage.getItem("darkMode");
+getVisits();
 
 const menuButton = document.querySelector('.menu-button');
 const menuitems = document.querySelectorAll('.menu-item');
@@ -32,3 +33,15 @@ modeButton.addEventListener("click", () => {
         localStorage.setItem("darkMode", "enabled");
     }
 });
+
+
+function getVisits() {
+    const visitsSpan = document.getElementById("visits");
+    let visits = 1;
+    let numberOfVisits = localStorage.getItem("visits");
+    if (numberOfVisits != null) {
+        visits = parseInt(numberOfVisits) + 1;
+    }
+    localStorage.setItem("visits", visits);
+    visitsSpan.textContent = visits;
+}
