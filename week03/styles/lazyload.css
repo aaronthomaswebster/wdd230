@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #333;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    background: black;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

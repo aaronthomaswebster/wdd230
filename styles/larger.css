@@ -1,33 +1,35 @@
-@media only screen and (min-width: 600px){
-  
-  
-    nav{
-       flex-direction: row-reverse;
-       justify-content: end;
-       gap : 10px;
+@media only screen and (min-width: 600px) {
+
+
+    nav {
+        flex-direction: row-reverse;
+        justify-content: end;
+        gap: 10px;
     }
 
-.activities{
-    
-    grid-column: 1 / 2;
-    grid-row: 2/4;
-}
+    .activities {
 
-.project{
-    grid-column: 2 / 3;
-    grid-row: 2/3;
-}
+        grid-column: 1 / 2;
+        grid-row: 2/4;
+    }
 
-.info{
-    grid-column: 2 / 3;
-    grid-row: 3/4;
-}
+    .project {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+    }
 
-.menu-item{
-    display: flex;
-    
-}
-.menu-button{
-    display: none;
-}
+    .info {
+        grid-column: 2 / 3;
+        grid-row: 3/4;
+    }
+
+    .menu-item {
+        display: flex;
+
+    }
+
+    .menu-button {
+        display: none;
+    }
+
 }

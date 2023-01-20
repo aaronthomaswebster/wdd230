@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 230 - Lazy Load</title>
+        <meta name="description" content="WDD230 Course assignment on the basics of Lazy loading">
+        <meta name="author" content="Aaron Webster">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/normalize.css">
+        <link rel="stylesheet" href="styles/lazyload.css">
+        <link rel="icon" href="/favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <h1>Lazy Load</h1>
+        </header>
+        <main>
+            <picture>
+                <img src="images/river-1.webp" alt="first river" loading="lazy" width="400" height="600">
+            </picture>
+            <picture>
+                <img src="images/river-2.webp" alt="second river" loading="lazy" width="400" height="706">
+            </picture>
+            <picture>
+                <img src="images/river-3.webp" alt="third river" loading="lazy" width="400" height="600">
+            </picture>
+            <picture>
+                <img src="images/river-4.webp" alt="fourth river" loading="lazy" width="400" height="689">
+            </picture>
+            <picture>
+                <img src="images/river-5.webp" alt="fifth river" loading="lazy" width="400" height="725">
+            </picture>
+            <picture>
+                <img src="images/river-6.webp" alt="sixth river" loading="lazy" width="400" height="600">
+            </picture>
+        </main>
+        <footer>
+            <p>© <span id="current-year"></span> Aaron Webster - United States | <span class="highlight"
+                    id="lastModified"></span></p>
+
+        </footer>
+        <script src="scripts/lazyload.js"></script>
+    </body>
+
+</html>
