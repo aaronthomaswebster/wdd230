@@ -53,4 +53,32 @@
     }
 
 
+
+    #discover {
+        display: grid;
+        grid-template-columns: 25% auto;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-gap: 15px;
+    }
+
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--accent-color);
+        padding: 15px;
+    }
+
+    #discover>#views>.container>figure>img {
+        width: 250px;
+        height: auto;
+        margin: .1rem;
+        transition: box-shadow .25s ease-in-out;
+    }
+
+    #discover>#views>.container>figure>img:hover {
+        box-shadow: 0 0 30px #333;
+    }
+
+
 }

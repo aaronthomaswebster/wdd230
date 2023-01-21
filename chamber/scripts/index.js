@@ -33,6 +33,25 @@ menuButton.addEventListener('click', () => {
 
 
 
+function getDaysSinceLastVisit() {
+
+    let currentDate = new Date();
+    try {
+        let lastVisit = localStorage.getItem("lastVisit");
+        let lastVisitDate = new Date(lastVisit);
+        let daysSinceLastVisit = Math.floor((currentDate - lastVisitDate) / (1000 * 60 * 60 * 24));
+        let timeSinceLastVistElemet = document.getElementById("daysSinceLastVisit");
+        timeSinceLastVistElemet.textContent = daysSinceLastVisit;
+    } catch (e) {
+        try {
+            let timeSinceLastVistElemet = document.getElementById("daysSinceLastVisit");
+            timeSinceLastVistElemet.textContent = 'First Visit';
+        } catch (e) {
+            console.log('element not found');
+        }
+    }
+    localStorage.setItem("lastVisit", currentDate);
+}
 
 
 
@@ -47,3 +66,5 @@ async function getWeatherData() {
     //update weather data section
 
 }
+
+getDaysSinceLastVisit();

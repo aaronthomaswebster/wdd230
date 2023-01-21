@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orem Utah Chamber of Commerce</title>
+        <meta name="description" content="Chamber of Commerce website for the city of Orem in Utah.">
+        <meta name="author" content="Aaron Webster">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="favicon.ico">
+        <!--  Essential META Tags -->
+        <meta property="og:title" content="Aaron Webster's WDD230 Home Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.orem.us/uploads/7/8/6/6/7866822/110411-1007_orig.jpg">
+        <meta property="og:url" content="https://aaronthomaswebster.github.io/wdd230/index.html">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img src="images/orem-2.png" alt="chamber logo">
+                <div id="menu-button" aria-expanded="false" aria-controls="menu-button" role="button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <a href="index.html" class="menu-item">Home</a>
+                    <a href="#" class="menu-item">Discover</a>
+                    <a href="#" class="menu-item">Directory</a>
+                    <a href="#" class="menu-item">Join</a>
+                </div>
+            </nav>
+        </header>
+        <main id="discover">
+            <section id="sidebar">
+                <h2>About Orem</h2>
+                <p>Population: 97,861</p>
+                <p>Size: 18.57 mi² </p>
+                <p>Days since last visit: <span id="daysSinceLastVisit"></span> </p>
+                <p></p>
+            </section>
+            <section id="views">
+                <h2 class="title">Views of Orem</h2>
+
+                <div class="container">
+
+                    <figure>
+                        <img src="images/discover/temple.webp" loading="lazy" alt="Orem Temple">
+                        <figcaption>Orem Temple Construction</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/temple-art.webp" loading="lazy" alt="Drawing of Orem Temple">
+                        <figcaption>Orem Temple Rendering</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/scera-park.webp" loading="lazy" alt="Scera Park">
+                        <figcaption>Scera Park</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/mall.webp" loading="lazy" alt="University Place Mall">
+                        <figcaption>University Place Mall</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/library.webp" loading="lazy" alt="Orem library">
+                        <figcaption>Orem library</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/orem.webp" loading="lazy" alt="Arial photo of Orem">
+                        <figcaption>Orem</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/uvu.webp" loading="lazy" alt="Scera Park">
+                        <figcaption>:hover pseduo-class | box-shadow</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/scera-arts.webp" loading="lazy" alt="Utah Valley University">
+                        <figcaption>Utah Valley University</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/discover/plaground.webp" loading="lazy" alt="All abilities playground">
+                        <figcaption>All abilities playground</figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="current-year"></span> Aaron Webster - United States</p>
+            <p class="highlight" id="lastModified"></p>
+        </footer>
+        <script src="scripts/index.js"></script>
+    </body>
+
+</html>
