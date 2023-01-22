@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     color: black;
 }
 
@@ -88,8 +88,8 @@ main {
     grid-template-columns: auto;
     gap: 10px;
     max-width: 960px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -137,7 +137,7 @@ section {
 section>h3 {
     background: #B9EFDE;
     border-radius: 10px 10px 0px 0px;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 10px;
 }
 
