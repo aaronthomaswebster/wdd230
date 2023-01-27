@@ -6,6 +6,13 @@ const menuButton = document.querySelector('.menu-button');
 const menuitems = document.querySelectorAll('.menu-item');
 const modeButton = document.querySelector("#mode");
 const body = document.querySelector("body");
+const userName = document.getElementById("user-name");
+const userNameRepeat = document.getElementById("repeat-user-name");
+const rangeInput = document.getElementById("range");
+const rangeValue = document.getElementById("range-value");
+const submitButton = document.getElementById("submit-button");
+const formElement = document.getElementById("form");
+const formInputElement = document.getElementById("form-table");
 
 
 menuButton.addEventListener("click", () => {
@@ -45,3 +52,37 @@ function getVisits() {
     localStorage.setItem("visits", visits);
     visitsSpan.textContent = visits;
 }
+
+submitButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (formElement.reportValidity()) {
+        formInputElement.classList.toggle("hidden");
+        const tableName = document.getElementById("table-name");
+        const tableEmail = document.getElementById("table-email");
+        const tableRange = document.getElementById("table-page-raiting");
+        const tableUserName = document.getElementById("table-username");
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+
+        tableName.textContent = nameInput.value;
+        tableEmail.textContent = emailInput.value;
+        tableRange.textContent = rangeInput.value;
+        tableUserName.textContent = userName.value;
+
+
+    }
+
+});
+
+rangeInput.addEventListener("input", (e) => {
+    rangeValue.textContent = e.target.value;
+});
+
+userNameRepeat.addEventListener("input", (e) => {
+
+    if (userName.value !== userNameRepeat.value) {
+        userNameRepeat.setCustomValidity("Usernames do not match");
+    } else {
+        userNameRepeat.setCustomValidity("");
+    }
+});

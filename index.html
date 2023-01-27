@@ -32,8 +32,10 @@
       <a class="link menu-item" href="https://www.byui.edu/">BYU-Idaho</a>
     </nav>
     <header>
-      <img src="images/aaron.webp" alt="profile image" loading="lazy">
-      <h1>Aaron Webster</h1>
+      <div class="page">
+        <img src="images/aaron.webp" alt="profile image" loading="lazy">
+        <h1>Aaron Webster</h1>
+      </div>
     </header>
     <main>
       <div class="hero">
@@ -65,7 +67,11 @@
             <a href="https://codepen.io/aaronthomaswebster/pen/abjEojr?editors=1100">Responsive Images</a> |
             <a href="week03/bom.html">Book of Mormon Favorites </a>
           </li>
-          <li>Week 04: <a href=""></a></li>
+          <li>Week 04: <a href="https://codepen.io/aaronthomaswebster/pen/vYarEEG?editors=1100">CSS Pseudo-Classes</a> |
+            <a href="/week04/images/css selectors.png">CSS Combinators</a> |
+            <a href="/week04/tablebuild.html">Tabel Builder</a> |
+            <a href="/week04/form-start/index.html">HTML Forms</a>
+          </li>
           <li>Week 05: <a href=""></a></li>
           <li>Week 06: <a href=""></a></li>
         </ul>
@@ -82,11 +88,63 @@
           <li><a href="">etc</a></li>
         </ul>
       </section>
+      <section class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98752.0466943093!2d-84.48480846894198!3d39.333552462636256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884051334b4a1cf7%3A0x7725672ecf5980d9!2sWest%20Chester%20Township%2C%20OH!5e0!3m2!1sen!2sus!4v1674196972116!5m2!1sen!2sus"
+          width="100%" height="450" style="border:0; margin:10px 10px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </section>
+      <section class="form">
+
+        <form id="form">
+          <fieldset>
+            <legend>Feedback</legend>
+            <label class="top">Full Name*<input type="text" required id="name"></label>
+            <label class="top">Email*<input type="email" required id="email"></label>
+            <label class="top">Page Raiting(1-10) [<span id="range-value"></span>]<input id="range" type="range" min="1"
+                max="10">
+            </label>
+            <label class="top">Username*<input id="user-name" type="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{5,12}"
+                required></label>
+            <label class="top">Repeat Username*<input id="repeat-user-name" type="password" required></label>
+          </fieldset>
+          <input id="submit-button" type="submit" value="Send Feedback" class="submitbtn">
+        </form>
+      </section>
+      <section class="form-input hidden" id="form-table">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Form Input</th>
+            </tr>
+            <tr>
+              <th>Field</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <t-body id="table-body">
+            <tr>
+              <td>Name</td>
+              <td id="table-name"></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td id="table-email"></td>
+            </tr>
+            <tr>
+              <td>Page Raiting</td>
+              <td id="table-page-raiting"></td>
+            </tr>
+            <tr>
+              <td>Username</td>
+              <td id="table-username"></td>
+            </tr>
+          </t-body>
+          <caption class="caption">Figure 1: Example HTML Table Output</caption>
+        </table>
+      </section>
     </main>
-    <iframe class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98752.0466943093!2d-84.48480846894198!3d39.333552462636256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884051334b4a1cf7%3A0x7725672ecf5980d9!2sWest%20Chester%20Township%2C%20OH!5e0!3m2!1sen!2sus!4v1674196972116!5m2!1sen!2sus"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
       <p>© <span id="current-year"></span> Aaron Webster - United States</p>
       <p class="highlight" id="lastModified"></p>

@@ -9,8 +9,9 @@
             "activity project"
             "activity info"
             "map map"
+            "form form"
         ;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         max-width: 960px;
