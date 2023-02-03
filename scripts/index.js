@@ -86,3 +86,58 @@ userNameRepeat.addEventListener("input", (e) => {
         userNameRepeat.setCustomValidity("");
     }
 });
+
+function converKtoF(kelvin) {
+    return (kelvin - 273.15) * 9 / 5 + 32;
+}
+
+async function getWeather() {
+    const response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=40.296898&lon=-111.694649&appid=cfd4af0654acd4eb5d23d279ae86e62b');
+    const data = await response.json();
+    console.log(data);
+    const temp = document.createElement("p");
+    const description = document.createElement("p");
+
+    temp.innerHTML = `${converKtoF(data.main.temp).toFixed()}&deg;F`;
+
+    description.textContent = data.weather[0].description;
+
+
+    const weatherIcon = document.createElement("img");
+    weatherIcon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+
+    const weatherDiv = document.getElementById("weather");
+
+    weatherDiv.appendChild(temp);
+    weatherDiv.appendChild(description);
+    weatherDiv.appendChild(weatherIcon);
+
+}
+
+getWeather();
+
+
+async function buildActivityList() {
+    const response = await fetch('./activities.json');
+    const data = await response.json();
+    console.log({ data });
+    const activityEl = document.getElementById('activity');
+
+    for (let week in data) {
+        const weekli = document.createElement("li");
+        weekli.innerHTML = week + ': '
+        for (let link in data[week]) {
+            console.log(data[week][link]);
+            const linkEl = document.createElement('a');
+            linkEl.innerHTML = data[week][link].title;
+            linkEl.setAttribute('href', data[week][link].path);
+            weekli.appendChild(linkEl);
+            weekli.innerHTML += ' | '
+        }
+        activityEl.appendChild(weekli)
+    }
+
+
+}
+
+buildActivityList()

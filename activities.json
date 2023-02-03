@@ -1,0 +1,89 @@
+{
+    "week 01": [
+        {
+            "title": "Holy Grail",
+            "path": "week01/holygrail.html"
+        },
+        {
+            "title": "Applied JavaScript (CodePen)",
+            "path": "week01/mediaquery.html"
+        },
+        {
+            "title": "Media Query",
+            "path": "week01/media-query.html"
+        },
+        {
+            "title": "Chamber Site Plan",
+            "path": "week01/chamber-site-plan.html"
+        }
+    ],
+    "week 02": [
+        {
+            "title": "Design",
+            "path": "week02/design.html"
+        },
+        {
+            "title": " \"Hamburger\" Menu (CodePen)",
+            "path": "https://codepen.io/aaronthomaswebster/pen/dyjvEEg"
+        },
+        {
+            "title": "Book of Mormon Favorites",
+            "path": "week02/bom.html"
+        }
+    ],
+    "week 03": [
+        {
+            "title": "WebP",
+            "path": "week03/images/landscape.webp"
+        },
+        {
+            "title": "Lazzy Load",
+            "path": "week03/lazyload.html"
+        },
+        {
+            "title": "Responsive Images",
+            "path": "https://codepen.io/aaronthomaswebster/pen/abjEojr?editors=1100"
+        },
+        {
+            "title": "Book of Mormon Favorites",
+            "path": "week03/bom.html"
+        }
+    ],
+    "week 04": [
+        {
+            "title": "CSS Pseudo-Classes",
+            "path": "https://codepen.io/aaronthomaswebster/pen/vYarEEG?editors=1100"
+        },
+        {
+            "title": "CSS Combinators",
+            "path": "week04/images/css-selectors.png"
+        },
+        {
+            "title": "Tabel Builder",
+            "path": "week04/tablebuild.html"
+        },
+        {
+            "title": "HTML Forms",
+            "path": "week04/form-start/index.html"
+        }
+    ],
+    "week 05": [
+        {
+            "title": "CSS Pseudo-elements",
+            "path": "https://codepen.io/aaronthomaswebster/pen/OJwraOQ"
+        },
+        {
+            "title": "JSON",
+            "path": "week05/new-ward-members.json"
+        },
+        {
+            "title": "Fetch - Prophets",
+            "path": "week05/prophets.html"
+        },
+        {
+            "title": "Weather API",
+            "path": "week05/weather.html"
+        }
+    ],
+    "week 06": []
+}
