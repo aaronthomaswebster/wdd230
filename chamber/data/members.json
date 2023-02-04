@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "Minuteman Press of Orem",
+            "address": "  1100 N. State St. # 1",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "801-226-1111",
+            "logo": "./images/directory/minutemanpress.png"
+        },
+        {
+            "name": "Fly Fish Food",
+            "address": "932 N State St #4",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "801-615-6055",
+            "logo": "./images/directory/fly-fish-foodx.avif"
+        },
+        {
+            "name": "Ewing Irrigation & Landscape Supply",
+            "address": "712 N Orem Blvd",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "801-222-0777",
+            "logo": "./images/directory/ewing-irrigation.png"
+        },
+        {
+            "name": "Elan Solar",
+            "address": "504 W 800 N",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "833-833-3526",
+            "logo": "./images/directory/elan.webp"
+        },
+        {
+            "name": "Hale Center Theater Orem",
+            "address": "225 400 N",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "(801) 226-8600",
+            "logo": "./images/directory/hale-logo.png"
+        },
+        {
+            "name": "Baskin-Robbins",
+            "address": "210 N State St",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "(801) 224-0731",
+            "logo": "./images/directory/baskin-robbins.png"
+        },
+        {
+            "name": "Persnickety Prints",
+            "address": "190 N Orem Blvd",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84057",
+            "phone": "(801) 977-4687",
+            "logo": "./images/directory/persnicketyprints.jpg"
+        },
+        {
+            "name": "Mamá Chus",
+            "address": "1555 E 800 N",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84097",
+            "phone": "(801) 221-0429",
+            "logo": "./images/directory/mama-chus.png"
+        },
+        {
+            "name": "A Webster Consulting",
+            "address": "1633 W 980 S",
+            "city": "Orem",
+            "state": "UT",
+            "zip": "84058",
+            "phone": "(513) 545-0510",
+            "logo": "./images/directory/Awebster.svg"
+        }
+    ]
+}
