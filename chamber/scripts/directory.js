@@ -10,7 +10,6 @@ async function buildMemberGrid() {
     listBtn.src = `${listSRC}.svg`;
     const response = await fetch('data/members.json');
     const data = await response.json();
-    console.log({ data });
 
     for (let member in data.members) {
         const card = document.createElement("div");
@@ -47,7 +46,6 @@ async function buildMemberList() {
     listBtn.src = `${listSRC}-selected.svg`;
     const response = await fetch('data/members.json');
     const data = await response.json();
-    console.log({ data });
 
     const dataTable = document.createElement("table");
     dataTable.classList.add("table");

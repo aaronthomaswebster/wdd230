@@ -21,7 +21,6 @@ const menuButton = document.getElementById('menu-button')
 const menu = document.getElementsByClassName('menu')[0]
 
 menuButton.addEventListener('click', () => {
-    console.log('clicked')
     let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false
     menuButton.setAttribute('aria-expanded', !expanded)
     menu.classList.toggle('open')
