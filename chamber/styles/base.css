@@ -387,3 +387,27 @@ form label.top input:required:valid {
 .member-container {
     padding: 2px 16px;
 }
+
+.icon-btn {
+    all: unset;
+    cursor: pointer;
+
+}
+
+
+tbody>tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+}
+
+tbody>tr>td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #c2c2c2;
+}
