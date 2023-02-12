@@ -39,7 +39,6 @@ function getDaysSinceLastVisit() {
             let timeSinceLastVistElemet = document.getElementById("daysSinceLastVisit");
             timeSinceLastVistElemet.textContent = 'First Visit';
         } catch (e) {
-            console.log('element not found');
         }
     }
     localStorage.setItem("lastVisit", currentDate);
