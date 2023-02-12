@@ -5,9 +5,9 @@ Fonts are separated by a | */
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #5D707D;
-    --secondary-color: #00A0DF;
-    --accent-color: #FFCD00;
+    --primary-color: #78909C;
+    --secondary-color: #4FC3F7;
+    --accent-color: #FFC400;
 
     /* change the values below to your chosen font(s) */
     --heading-font: Alegreya, serif;
@@ -60,12 +60,15 @@ Fonts are separated by a | */
     margin: 10px
 }
 
+header {
+    background-color: var(--secondary-color);
+
+}
 
 
 nav {
     display: grid;
     grid-template-columns: 100px auto;
-    background-color: var(--secondary-color);
     max-width: 960px;
     margin: 0 auto;
     gap: 25px;
@@ -75,6 +78,7 @@ nav {
 
 nav img {
     height: 80px;
+    margin: 0 30px;
 }
 
 .menu {
@@ -122,14 +126,14 @@ nav img {
 }
 
 footer {
-    max-width: 960px;
     margin: 0 auto;
     background-color: var(--accent-color);
+    text-align: center;
 }
 
-footer>p {
-    padding: 10px 10px;
-    margin: 0;
+footer>div {
+    background-color: var(--accent-color);
+    max-width: 960px;
 }
 
 #welcome {
@@ -187,6 +191,13 @@ footer>p {
 
 
 
+#weather {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 15px;
+    padding: 15px;
+    border: #5D707D 2px solid;
+}
 
 #sponsors {
     display: grid;
@@ -255,6 +266,7 @@ footer>p {
     height: auto;
     margin: auto;
 }
+
 
 /* hover effect */
 .hover:hover {
@@ -394,6 +406,13 @@ form label.top input:required:valid {
 
 }
 
+body {
+    background-color: #E3F2FD;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 
 tbody>tr {
     border: 1px solid black;
@@ -410,4 +429,65 @@ tbody>tr>td {
 
 tbody>tr:nth-child(even) {
     background-color: #c2c2c2;
+}
+
+
+
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+    color: #546E7A;
+    border-radius: 10px;
+    margin: 1rem auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #bbb;
+
+}
+
+
+.forcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forcast-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #ddd;
+    margin: 1rem;
+    width: 100%;
+    max-width: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#banner-container {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ddd;
+    margin: 130px 10px;
+    width: 100%;
+    max-width: 940px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 70%);
+}
+
+.banner {
+    padding: 10px;
+}
+
+.forcast-card p {
+    margin: 0;
 }

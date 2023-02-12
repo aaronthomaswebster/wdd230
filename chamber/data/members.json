@@ -7,7 +7,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 226-1111",
-            "logo": "./images/directory/minutemanpress.webp"
+            "logo": "./images/directory/minutemanpress.webp",
+            "memberStatus": "bronze"
         },
         {
             "name": "Fly Fish Food",
@@ -16,7 +17,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 615-6055",
-            "logo": "./images/directory/fly-fish-food.webp"
+            "logo": "./images/directory/fly-fish-food.webp",
+            "memberStatus": "silver"
         },
         {
             "name": "Ewing Irrigation & Landscape Supply",
@@ -25,7 +27,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 222-0777",
-            "logo": "./images/directory/ewing-irrigation.webp"
+            "logo": "./images/directory/ewing-irrigation.webp",
+            "memberStatus": "silver"
         },
         {
             "name": "Elan Solar",
@@ -34,7 +37,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(833) 833-3526",
-            "logo": "./images/directory/elan.webp"
+            "logo": "./images/directory/elan.webp",
+            "memberStatus": "bronze"
         },
         {
             "name": "Hale Center Theater Orem",
@@ -43,7 +47,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 226-8600",
-            "logo": "./images/directory/hale-logo.webp"
+            "logo": "./images/directory/hale-logo.webp",
+            "memberStatus": "silver"
         },
         {
             "name": "Baskin-Robbins",
@@ -52,7 +57,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 224-0731",
-            "logo": "./images/directory/baskin-robbins.webp"
+            "logo": "./images/directory/baskin-robbins.webp",
+            "memberStatus": "silver"
         },
         {
             "name": "Persnickety Prints",
@@ -61,7 +67,8 @@
             "state": "UT",
             "zip": "84057",
             "phone": "(801) 977-4687",
-            "logo": "./images/directory/persnicketyprints.webp"
+            "logo": "./images/directory/persnicketyprints.webp",
+            "memberStatus": "bronze"
         },
         {
             "name": "Mamá Chus",
@@ -70,7 +77,8 @@
             "state": "UT",
             "zip": "84097",
             "phone": "(801) 221-0429",
-            "logo": "./images/directory/mama-chus.webp"
+            "logo": "./images/directory/mama-chus.webp",
+            "memberStatus": "gold"
         },
         {
             "name": "A Webster Consulting",
@@ -79,7 +87,8 @@
             "state": "UT",
             "zip": "84058",
             "phone": "(513) 545-0510",
-            "logo": "./images/directory/Awebster.svg"
+            "logo": "./images/directory/Awebster.svg",
+            "memberStatus": "gold"
         }
     ]
 }
