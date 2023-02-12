@@ -66,6 +66,7 @@ async function getWeather() {
     cityElement.textContent = city;
     stateElement.textContent = state;
     currentWeatherIcon.src = `http://openweathermap.org/img/w/${data.current.weather[0].icon}.png`;
+    currentWeatherIcon.alt = data.current.weather[0].description;
     currentTemp.textContent = data.current.temp + "°F";
     currentDescription.textContent = data.current.weather[0].description;
 
@@ -81,6 +82,7 @@ async function getWeather() {
         forcastDate.textContent = new Date(forcast.dt * 1000).toLocaleDateString();
         let forcastIcon = document.createElement("img");
         forcastIcon.src = `http://openweathermap.org/img/w/${forcast.weather[0].icon}.png`;
+        forcastIcon.alt = forcast.weather[0].description;
         let forcastTempHigh = document.createElement("p");
         forcastTempHigh.textContent = Math.round(forcast.temp.max) + "°F";
         let forcastTempLow = document.createElement("p");
@@ -105,7 +107,6 @@ const loadSponsors = async () => {
     for (let i = 0; i < 3; i++) {
         let randIndex = Math.floor(Math.random() * (goldAndSilverMembers.length));
         let sponsor = goldAndSilverMembers.splice(randIndex, 1)[0];
-        console.log(sponsor)
         const sponsorElement = document.createElement('img');
         sponsorElement.classList.add('sponsor');
         sponsorElement.src = sponsor.logo;
