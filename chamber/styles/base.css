@@ -14,7 +14,7 @@ Fonts are separated by a | */
     --paragraph-font: Merriweather, sans-serif;
 
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: var(--secondary-color);
+    --headline-color-on-white: black;
     /* headlines on a white background */
     --headline-color-on-color: white;
     /* headlines on a colored background */
@@ -22,11 +22,12 @@ Fonts are separated by a | */
     /* paragraph text on a white background */
     --paragraph-color-on-color: white;
     /* paragraph text on a colored background */
-    --paragraph-background-color: var(--secondary-color);
+    --paragraph-background-color: black;
 }
 
-
-
+main {
+    padding-top: 80px;
+}
 
 #hero-image {
     display: grid;
@@ -61,7 +62,12 @@ Fonts are separated by a | */
 }
 
 header {
+    position: inherit;
     background-color: var(--secondary-color);
+    color: var(--headline-color-on-color);
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 80px;
 
 }
 
@@ -69,7 +75,7 @@ header {
 nav {
     display: grid;
     grid-template-columns: 100px auto;
-    max-width: 960px;
+    max-width: 1060px;
     margin: 0 auto;
     gap: 25px;
     padding: 10px;
@@ -81,16 +87,47 @@ nav img {
     margin: 0 30px;
 }
 
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-decoration: none;
+    list-style: none;
+    height: 60px;
+    padding: 0 10px;
+
+    margin: 10px 0;
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.menu-item:hover {
+    box-shadow: 0 4px 2px -2px #333;
+    text-decoration: underline;
+}
+
+.active {
+    box-shadow: 0 3px 2px -2px #333;
+}
+
 .menu {
     width: 100%;
     display: none;
+    transition: all 0.5s;
 }
 
 .menu.open {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    right: 0;
     align-items: center;
     justify-content: center;
+    background-color: var(--secondary-color);
+    width: 300px;
+    transition: all 0.5s;
 }
 
 
@@ -141,7 +178,6 @@ footer>div {
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
     padding: 15px;
-    border: #5D707D 2px solid;
 }
 
 #welcome>div:nth-child(1) {
@@ -149,7 +185,7 @@ footer>div {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2em;
-    color: var(--primary-color);
+    color: var(--paragraph-color-on-white);
 }
 
 #welcome>div:nth-child(2) {
@@ -171,7 +207,6 @@ footer>div {
     grid-template-rows: auto 1fr;
     grid-gap: 15px;
     padding: 15px;
-    border: #5D707D 2px solid;
 }
 
 #events>h3 {
@@ -179,7 +214,7 @@ footer>div {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2em;
-    color: var(--primary-color);
+    color: var(--headline-color-on-white);
 }
 
 #events>ul>li {
@@ -196,7 +231,7 @@ footer>div {
     grid-template-rows: auto 1fr;
     grid-gap: 15px;
     padding: 15px;
-    border: #5D707D 2px solid;
+    border: #bbb 2px solid;
 }
 
 #sponsors {
@@ -204,7 +239,7 @@ footer>div {
     grid-template-rows: auto 1fr;
     grid-gap: 15px;
     padding: 15px;
-    border: #5D707D 2px solid;
+
 }
 
 #sponsors>h3 {
@@ -212,7 +247,7 @@ footer>div {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2em;
-    color: var(--primary-color);
+    color: var(--headline-color-on-white);
 }
 
 .sponsor {
@@ -243,7 +278,7 @@ footer>div {
     text-align: center;
     font-family: var(--heading-font);
     font-size: 2em;
-    color: var(--primary-color);
+    color: var(--headline-color-on-white);
 }
 
 
@@ -268,11 +303,6 @@ footer>div {
 }
 
 
-/* hover effect */
-.hover:hover {
-    box-shadow: 0 0 50px #333;
-}
-
 
 
 /* form */
@@ -284,7 +314,7 @@ footer>div {
     max-width: 960px;
     margin: 0 auto;
     gap: 25px;
-    padding: 10px;
+    padding: 80px 10px 10px 10px;
     font-family: 'Yeon Sung', cursive;
 }
 
@@ -439,12 +469,12 @@ tbody>tr:nth-child(even) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
-    color: #546E7A;
+    color: black;
     border-radius: 10px;
     margin: 1rem auto;
     justify-items: center;
     align-items: center;
-    background-color: #bbb;
+    background-color: #ddd;
 
 }
 
@@ -466,6 +496,7 @@ tbody>tr:nth-child(even) {
     margin: 1rem;
     width: 100%;
     max-width: 100px;
+    color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 

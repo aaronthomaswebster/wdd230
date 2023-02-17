@@ -87,7 +87,7 @@ async function getWeather() {
         let forcastTempLow = document.createElement("p");
         forcastTempLow.textContent = Math.round(forcast.temp.min) + "°F";
         forcastTempHigh.style.color = "#FF1744";
-        forcastTempLow.style.color = "#00B0FF";
+        forcastTempLow.style.color = "#150ed8";
         forcastCard.appendChild(forcastIcon);
         forcastCard.appendChild(forcastTempHigh);
         forcastCard.appendChild(forcastTempLow);
