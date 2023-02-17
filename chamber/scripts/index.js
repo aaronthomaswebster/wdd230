@@ -48,9 +48,30 @@ function getDaysSinceLastVisit() {
 async function getWeather() {
     const weatherElement = document.getElementById("weather");
     if (!weatherElement) return;
+    let locationElement = document.createElement("div");
+    locationElement.id = "location";
+    let cityElement = document.createElement("h2");
+    cityElement.id = "city";
+    let stateElement = document.createElement("h3");
+    stateElement.id = "state";
+    locationElement.appendChild(cityElement);
+    locationElement.appendChild(stateElement);
+    weatherElement.appendChild(locationElement);
+    let currentWeatherElement = document.createElement("div");
+    currentWeatherElement.id = "current-weather";
+    let currentTempElement = document.createElement("h2");
+    currentTempElement.id = "current-temp";
+    let currentDescriptionElement = document.createElement("h3");
+    currentDescriptionElement.id = "current-weather-description";
+    currentWeatherElement.appendChild(currentTempElement);
+    currentWeatherElement.appendChild(currentDescriptionElement);
+    weatherElement.appendChild(currentWeatherElement);
+    let currentWeatherIconElement = document.createElement("img");
+    currentWeatherIconElement.id = "current-weather-icon";
+    currentWeatherIconElement.loading = "lazy";
+    currentWeatherIconElement.alt = "weather icon";
+    weatherElement.appendChild(currentWeatherIconElement);
 
-    const cityElement = document.getElementById("city");
-    const stateElement = document.getElementById("state");
     const currentWeatherIcon = document.getElementById("current-weather-icon");
     const currentTemp = document.getElementById("current-temp");
     const currentDescription = document.getElementById("current-weather-description");
@@ -68,6 +89,7 @@ async function getWeather() {
     currentWeatherIcon.alt = data.current.weather[0].description;
     currentTemp.textContent = data.current.temp + "°F";
     currentDescription.textContent = data.current.weather[0].description;
+
 
     forcastElement.innerHTML = "";
     forcastElement.classList.add("forcast");
