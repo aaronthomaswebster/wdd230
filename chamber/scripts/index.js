@@ -99,6 +99,8 @@ async function getWeather() {
 }
 
 const loadSponsors = async () => {
+    const sponsorsList = document.getElementById('sponsor-list')
+    if (!sponsorsList) return;
 
     const response = await fetch('data/members.json');
     const data = await response.json();

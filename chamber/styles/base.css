@@ -352,6 +352,7 @@ form label.top textarea {
     width: 100%;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
+    height: 24px;
 }
 
 form label.sbs {
@@ -370,6 +371,7 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    height: 50px;
 }
 
 form label.top input:required {
@@ -396,6 +398,9 @@ form label.top input:required:valid {
     padding-bottom: 20px;
 }
 
+#menu-button {
+    height: 10px;
+}
 
 
 .card {
@@ -481,6 +486,7 @@ tbody>tr:nth-child(even) {
 
 .forcast {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
