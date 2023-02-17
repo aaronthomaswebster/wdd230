@@ -136,6 +136,17 @@ const createBanner = () => {
     });
 }
 
+const setDateTimeOnForm = () => {
+    const dateTimeElement = document.getElementById('date-time');
+    if (!dateTimeElement) return;
+
+    const dt = new Date();
+    dt.setMinutes(dt.getMinutes() - dt.getTimezoneOffset());
+    dateTimeElement.value = dt.toISOString().slice(0, 16);
+
+
+}
+
 
 loadSponsors();
 
@@ -143,3 +154,4 @@ getDaysSinceLastVisit();
 getWeather();
 
 createBanner();
+setDateTimeOnForm();
